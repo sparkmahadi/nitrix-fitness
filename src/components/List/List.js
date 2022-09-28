@@ -2,7 +2,7 @@ import React from 'react';
 
 const List = () => {
     return (
-        <div>
+        <div className='bg-slate-500'>
             This is the list
         </div>
     );
