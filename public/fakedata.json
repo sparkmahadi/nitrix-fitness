@@ -2,37 +2,37 @@
     {
       "name": "Push ups",
       "time": 30,
-      "description": "Keep your spine straight and just go for 30 push ups.",
+      "description": "Keep your spine straight and just go for 30 push ups. It will make your chest look dashing.",
       "img": "pushups.png"
     },
     {
       "name": "Squats",
       "time": 30,
-      "description": "Keep your back straight and just go for 30 squats.",
+      "description": "Keep your back straight and just go for 30 squats. Very effective for thighs and glutes.",
       "img": "squats.png"
     },
     {
       "name": "Deadlift",
       "time": 30,
-      "description": "Put suitable weight for you and do 30 Deadlifts.",
+      "description": "Put suitable weight for you and do 30 Deadlifts. It will increase your strength and back size.",
       "img": "deadlifts.png"
     },
     {
       "name": "Side Plank",
       "time": 30,
-      "description": "Wanna have abs? just do side planks.",
+      "description": "Wanna have six pack abs? just do side planks. It will reduce your love handles fat too.",
       "img": "sideplanks.png"
     },
     {
       "name": "Running",
       "time": 600,
-      "description": "Run to burn your fats as fast as possible.",
+      "description": "Run to burn your stubborn fats as fast as possible. It is the conventional and best way to burn fats.",
       "img": "running.png"
     },
     {
       "name": "Shoulder Curl",
       "time": 30,
-      "description": "Wanna have a wide shoulder? Do 30 Shoulder Curls.",
+      "description": "Wanna have a wide shoulder? Do 30 Shoulder Curls. It will change your overall looks.",
       "img": "shouldercurl.png"
     }
   ]

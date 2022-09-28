@@ -13,7 +13,7 @@ const Feed = () => {
     return (
         <div className='grid grid-cols-3 gap-10 py-24 pl-36 pr-32'>
             {
-                exercises.map(exercise => <Card></Card>)
+                exercises.map(exercise => <Card key={exercise.name} exercise={exercise}></Card>)
             }
         </div>
     );

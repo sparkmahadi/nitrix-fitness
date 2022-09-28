@@ -1,20 +1,19 @@
 import React from 'react';
 
-const Card = () => {
+const Card = (props) => {
+   const exercise = props.exercise;
+   const {name, time, description, img} = exercise;
+   
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="pushups.png" alt="Shoes" /></figure>
+            <figure><img src={img} alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
+                <h2 className="card-title text-2xl">
+                {name}
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div> 
-                <div className="badge badge-outline">Products</div>
-                </div>
+                <p><span className='font-semibold'>Tips:</span> {description}</p>
+                <h4 className='font-semibold'>Time Required: {time} Seconds</h4>
             </div>
             </div>
         </div>
