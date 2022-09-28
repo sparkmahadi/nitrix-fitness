@@ -11,7 +11,7 @@ const Feed = () => {
     } , [])
 
     return (
-        <div className='grid grid-cols-3 gap-10 py-24 pl-36 pr-32'>
+        <div className='grid grid-cols-3 gap-10 p-24'>
             {
                 exercises.map(exercise => <Card key={exercise.name} exercise={exercise}></Card>)
             }
