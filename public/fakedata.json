@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Push ups",
+      "time": 30,
+      "description": "Keep your spine straight and just go for 30 push ups.",
+      "img": "pushups.png"
+    },
+    {
+      "name": "Squats",
+      "time": 30,
+      "description": "Keep your back straight and just go for 30 squats.",
+      "img": "squats.png"
+    },
+    {
+      "name": "Deadlift",
+      "time": 30,
+      "description": "Put suitable weight for you and do 30 Deadlifts.",
+      "img": "deadlifts.png"
+    },
+    {
+      "name": "Side Plank",
+      "time": 30,
+      "description": "Wanna have abs? just do side planks.",
+      "img": "sideplanks.png"
+    },
+    {
+      "name": "Running",
+      "time": 600,
+      "description": "Run to burn your fats as fast as possible.",
+      "img": "running.png"
+    },
+    {
+      "name": "Shoulder Curl",
+      "time": 30,
+      "description": "Wanna have a wide shoulder? Do 30 Shoulder Curls.",
+      "img": "shouldercurl.png"
+    }
+  ]
