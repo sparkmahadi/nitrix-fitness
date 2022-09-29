@@ -50,7 +50,7 @@ const Blog = () => {
                     </div>
 
             <h4 className="font-semibold text-2xl pt-7">Question: What are the uses of useEffect except fetching data from API?</h4>
-                    <div className="pt-3"><span className='font-bold'>Answer:</span><br/>
+                    <div className="pt-3 text-left"><span className='font-bold'>Answer:</span><br/>
                     The uses are:
                         <ul className='list-disc list-inside'>
                             <li>validating input field.</li>
