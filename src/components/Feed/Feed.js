@@ -18,12 +18,10 @@ const Feed = ({eventHandler}) => {
             {
                 exercises.map(exercise => <Card key={exercise.name} eventHandler={eventHandler} exercise={exercise}></Card>)
             }
-            
-            
-        </div>
-        <div>
-            <Blog></Blog>
-        </div>
+            </div>
+            <div>
+                <Blog></Blog>
+            </div>
         </div>
     );
 };

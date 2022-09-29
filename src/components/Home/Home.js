@@ -5,10 +5,10 @@ import './Home.css'
 
 let time = 0;
 const Home = () => {
-    const [timeRequired, setTime] = useState(0);
+    const [timeRequired, setTimeRequired] = useState(0);
     const addToListHandler = (exercise) =>{
         time = time + exercise.time;
-        setTime(time)
+        setTimeRequired(time)
     }
     return (
         <div className='home-container lg:gap-5'>
