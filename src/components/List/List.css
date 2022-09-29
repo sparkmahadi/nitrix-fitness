@@ -2,3 +2,20 @@
     padding: 0.5rem;
     text-align: center;
 }
+
+@media screen and (min-width:768px) {
+    .t-headings th{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .table-container td, tr{
+        padding: 0.1rem;
+        text-align: center;
+    }
+    .t-headings th{
+        padding: 0.5rem 0.2rem;
+        text-align: center;
+    }
+}
