@@ -3,10 +3,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './List.css'
 const List = ({timeRequired}) => {
-    const notify = () =>{
-        toast.success("Congratulations! You've Completed the Activities.")
-    }
     const [breakTime, setBreakTime] = useState(0);
+    
     const savedTime = localStorage.getItem('breakTime');
     useEffect(() => {
         if(savedTime){
@@ -23,6 +21,9 @@ const List = ({timeRequired}) => {
             setBreakTime(value)
             localStorage.setItem('breakTime', value)
         }
+    }
+    const notify = () =>{
+        toast.success("Congratulations! You've Completed the Activities.")
     }
     return (
         <div className='bg-slate-200 px-2 lg:px-5 xl:px-5 2xl:px-10 py-2 md:py-5 w-36 md:w-full text-center md:text-left relative'>
