@@ -12,15 +12,8 @@ const List = ({timeRequired}) => {
         }
     } , [])
     const addBreak = (value) =>{
-        if(savedTime){
-            const newTime = parseInt(savedTime) + value;
-            setBreakTime(newTime)
-            localStorage.setItem('breakTime', newTime);
-        }
-        else{
-            setBreakTime(value)
+        setBreakTime(value)
             localStorage.setItem('breakTime', value)
-        }
     }
     const notify = () =>{
         toast.success("Congratulations! You've Completed the Activities.")

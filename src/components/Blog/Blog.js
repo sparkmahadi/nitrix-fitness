@@ -3,11 +3,11 @@ import './Blog.css'
 
 const Blog = () => {
     return (
-        <div className='lg:mx-8 xl:mx-24'>
-            <h3 className=' bg-slate-200 text-2xl font-semibold px-2 py-2 uppercase'>Blog</h3>
+        <div>
+            <h3 className=' bg-slate-200 text-2xl font-semibold uppercase mx-3 lg:mx-8 xl:mx-24 rounded-lg px-2 py-1'>Blog</h3>
             <div>
 
-            <div className="bg-white rounded-lg px-2 pb-5 text-center md:text-left">
+            <div className="bg-white rounded-lg px-2 pb-5 text-center md:text-left mx-3 lg:mx-8 xl:mx-24 py-1">
 
             <h4 className="font-semibold text-2xl pt-7">Question: How does React work?</h4>
                     <p className="pt-3"><span className='font-bold'>Answer: </span> React works on the basis of JSX codes. JSX is simply syntactic sugar for creating very specific JavaScript objects. We can write both html and javascript on a single file by maintaing some conventions. React converts this codes to objects. It uses bebel compiler to do so.
