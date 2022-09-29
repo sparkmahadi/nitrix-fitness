@@ -1,9 +1,7 @@
 import React from 'react';
 import './Card.css'
 
-const Card = (props) => {
-    const eventHandler = props.eventHandler;
-   const exercise = props.exercise;
+const Card = ({exercise, eventHandler}) => {
    const {name, time, description, img} = exercise;
    
     return (
