@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './List.css'
 const List = ({timeRequired}) => {
+    const notify = () =>{
+        toast.success("Congratulations! You've Completed the Activities.")
+    }
     const [breakTime, setBreakTime] = useState(0);
     const savedTime = localStorage.getItem('breakTime');
     useEffect(() => {
@@ -67,11 +72,11 @@ const List = ({timeRequired}) => {
                 <div className='pt-2 md:pt-5'>
                 <h2 className='uppercase font-semibold md:text-xl'>Add a Break</h2>
                 <div className='grid grid-cols-3 xl:grid-cols-5 gap-2 justify-around items-center bg-slate-300 p-2 md:p-3 2xl:p-5 rounded-xl my-5'>
-                    <p onClick={()=>addBreak(10)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>10s</p>
-                    <p onClick={()=>addBreak(20)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>20s</p>
-                    <p onClick={()=>addBreak(30)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>30s</p>
-                    <p onClick={()=>addBreak(40)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>40s</p>
-                    <p onClick={()=>addBreak(50)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>50s</p>
+                    <button onClick={()=>addBreak(10)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>10s</button>
+                    <button onClick={()=>addBreak(20)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>20s</button>
+                    <button onClick={()=>addBreak(30)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>30s</button>
+                    <button onClick={()=>addBreak(40)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>40s</button>
+                    <button onClick={()=>addBreak(50)} className='bg-slate-500 hover:bg-blue-500 lg:px-2 2xl:px-4 md:py-2 py-1 rounded-xl md:font-semibold md:text-md 2xl:text-lg text-white text-center'>50s</button>
                 </div>
                 </div>
 
@@ -86,6 +91,9 @@ const List = ({timeRequired}) => {
                     <h3 className='uppercase md:text-lg font-semibold'>Break Time</h3>
                     <p className='bg-slate-500 hover:bg-blue-500 md:px-4 py-1 md:py-2 rounded-xl font-semibold md:text-lg text-white'>{breakTime} Seconds</p>
                 </div>
+
+                <button onClick={notify} className='btn-completed bg-violet-500 text-white w-full rounded-lg p-1 md:p-3 md:font-semibold md:text-lg md:my-5'>Activity Completed</button>
+                <ToastContainer position="top-center"></ToastContainer>
                 </div>
             </div>
         </div>
