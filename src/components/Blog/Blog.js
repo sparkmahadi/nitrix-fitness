@@ -17,10 +17,10 @@ const Blog = () => {
             <h4 className="font-semibold text-2xl pt-7">Question: What is the difference between props and state?</h4>
                     <div className="pt-3"><span className='font-bold'>Answer: </span> Difference between props and state:
 
-                                            <div>
-                        <table className='table-difference mx-auto mt-2'>
+                    <div className='table-difference'>
+                        <table className='mx-auto mt-2'>
                             {/* <!-- head --> */}
-                            <thead>
+                            <thead className='border-custom'>
                             <tr>
                                 <th>Props</th>
                                 <th>State</th>
