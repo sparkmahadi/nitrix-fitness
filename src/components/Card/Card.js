@@ -2,6 +2,7 @@ import React from 'react';
 import './Card.css'
 
 const Card = (props) => {
+    const eventHandler = props.eventHandler;
    const exercise = props.exercise;
    const {name, time, description, img} = exercise;
    
@@ -20,7 +21,7 @@ const Card = (props) => {
                     <h4 className='font-semibold'>Time Required: {time} Seconds</h4>
                 </div>
             </div>
-                <button className='bg-violet-500 p-1 md:p-2 rounded-bottom-lg md:text-xl font-semibold text-white w-full absolute bottom-0'>Add to List</button>
+                <button onClick={()=>eventHandler(exercise)} className='bg-violet-500 p-1 md:p-2 rounded-bottom-lg md:text-xl font-semibold text-white w-full absolute bottom-0'>Add to List</button>
             </div>
         </div>
     );  

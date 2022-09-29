@@ -1,6 +1,7 @@
 import React from 'react';
 import './List.css'
-const List = () => {
+const List = (props) => {
+    const time = props.timeRequired;
     return (
         <div className='bg-slate-200 px-2 lg:px-5 xl:px-5 2xl:px-10 py-2 md:py-5 w-36 md:w-full text-center md:text-left relative'>
             <div className='sticky top-0'>
@@ -61,7 +62,7 @@ const List = () => {
                 <h2 className='uppercase font-semibold md:text-xl'>Exercise Details</h2>
                 <div className='xl:flex items-center justify-around bg-slate-300 p-2 md:p-5 rounded-xl my-5 text-center'>
                     <h3 className='uppercase md:text-lg font-semibold'>Exercise Time</h3>
-                    <p className='bg-slate-500 hover:bg-blue-500 md:px-4 py-1 md:py-2 rounded-xl font-semibold md:text-lg text-white'>10 Seconds</p>
+                    <p className='bg-slate-500 hover:bg-blue-500 md:px-4 py-1 md:py-2 rounded-xl font-semibold md:text-lg text-white'>{time} Seconds</p>
                 </div>
 
                 <div className='xl:flex items-center justify-around bg-slate-300 p-2 md:p-5 rounded-xl my-5 text-center'>
